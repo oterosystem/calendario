@@ -42,7 +42,7 @@ public class TestCalendarioBasico
         }
 
         numeroDeTests++;
-        proceso = "Fijando la fecha 3-5-9...";
+        proceso = "Fijando la fecha 03-05-09...";
         try {
             calendario.fijarFecha(3, 5, 9);
             numeroDeTestsOk++;

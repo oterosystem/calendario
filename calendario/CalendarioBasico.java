@@ -46,24 +46,21 @@ public class CalendarioBasico
         }
         if (mes < 10) {
             parte2 = "0" + parte2;
-
-            if (ano < 10) {
-                parte3 = "0" + parte3;
-            }
-            textoADevolver = parte1 + "-" + parte2 + "-" + parte3;
-            
         }
-            return textoADevolver;
+
+        if (ano < 10) {
+            parte3 = "0" + parte3;
+        }
+        textoADevolver = parte1 + "-" + parte2 + "-" + parte3;
+        return textoADevolver;
     }
-    
-    
 
     public void avanzarFecha()
     {
         dia = dia +1;
         if(dia == 31){
-            dia = 1;
             mes = mes + 1;
+            dia = 1;
             if(mes == 13) {
                 mes = 1;
                 ano = ano + 1;
